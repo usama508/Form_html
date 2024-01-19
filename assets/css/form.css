@@ -1,0 +1,339 @@
+
+.left_header{
+    /* width: 70%; */
+}
+.right_header ul{
+   padding-left: 0;
+}
+.inner_header{
+display: flex;
+justify-content: space-between;
+ }
+ .right_header ul li{
+    list-style: none;
+    font-size: 16px;
+line-height: 18px;
+color: #5D7771;
+font-weight: 500;
+font-family: "Raleway";
+ }
+#form_sec{
+    background-color: rgba(151, 204, 203, 0.507);
+}
+ .main_form_heading{
+    margin: 30px 0;
+    /* width: 486px;
+height: 663px; */
+font-size: 26px;
+line-height: 19px;
+color: #5AA09C;
+font-weight: bold;
+font-family: "Raleway Roman";
+text-align: center;
+padding: 15px 0;
+ }
+ .in_heading{
+    font-size: 22px;
+line-height: 19px;
+color: #5AA09C;
+font-weight: bold;
+font-family: "Raleway Roman";
+text-align: center;
+background-color: rgba(151, 204, 203, 0.507);
+padding: 17px 0;
+margin-top: 40px;
+background-color: rgba(151, 204, 203, 0.507);
+ }
+.main_heading h1{
+  
+    font-size: 16px;
+    color: #575C54;
+    font-weight: bold;
+    font-family: "Raleway Roman";
+   
+}
+
+
+.checkbox_input{
+    font-size: 28px;
+    border-radius: 0 !important;
+    background-color: #e5f4f5;
+    border: 0.5px solid #95bbba;
+    opacity: 100%;
+    /* margin-left: 20px; */
+  margin-left: 0 !important;
+}
+
+/* .checkboxes{
+    margin-left: 40px;
+} */
+
+.checkbox_input:focus{
+    box-shadow: none;
+}
+
+.checkbox_input:checked{
+    background-color:#5aa09c;
+    ;
+    border-color: #5aa09c;
+    ;
+}
+
+.checkbox_label{
+    font-size:16px;
+    color: #575C54;
+    font-weight: bold;
+    font-family: "Raleway Roman";  
+    margin-top: 11px;
+}
+
+.input_label{
+    font-size: 16px;
+    color: #575C54;
+    font-weight: bold;
+    font-family: "Raleway Roman";    
+}
+
+.form_input{
+    height: 20px;
+    background-color: #e5f4f5;
+    border: 0.5px solid #95bbba;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.form_input1{
+width: 30px;
+    height: 20px;
+    background-color: #e5f4f5;
+    border: 0.5px solid #95bbba;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.form_input:focus{
+    height: 20px;
+    background-color: #e5f4f5;
+    border: 0.5px solid #95bbba;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form_input1:focus{
+    height: 20px;
+    background-color: #e5f4f5;
+    border: 0.5px solid #95bbba;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: -7px;
+   
+}
+
+.checkbox_main{
+   display: flex;
+   justify-content: space-between;
+   padding-right: 17px;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox1_main{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    padding-right: 17px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.check_container {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Hide the browser's default checkbox */
+  .check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(151, 204, 203, 0.507);
+  }
+  .checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:white;
+    box-shadow: 3px 3px 5px 0px rgba(93,119,113,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(93,119,113,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(93,119,113,0.75);
+  }
+  /* On mouse-over, add a grey background color */
+  .check_container:hover input ~ .checkmark {
+    background-color: rgba(151, 204, 203, 0.507);
+  }
+  /* When the checkbox is checked, add a blue background */
+  .check_container input:checked ~ .checkmark {
+    background-color: rgba(151, 204, 203, 0.507);
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .check_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .check_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.label_text{
+font-size: 16px;
+line-height: 19px;
+color: #687571;
+font-weight: bold;
+font-family: "Raleway Roman";
+/* text-align: center; */
+padding-left: 15px;
+}
+
+@media screen and (max-width:768px){
+    .main_heading h1{
+  
+        font-size: 18px;
+        
+       
+    }
+
+    .input_label{
+        font-size: 18px;
+       
+    }
+    .checkbox_label{
+        font-size:18px;
+        
+    }
+
+    .checkbox_input{
+        font-size: 19px;
+       
+    }
+
+    .checkbox_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     }
+
+     .checkbox1_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .form_input1{
+        width: 23px;
+        font-size:7px;
+            /* height: 3px !important; */
+            background-color: #e5f4f5;
+            border: 0.5px solid #95bbba;
+            border-radius: 0;
+            margin-top: 10px;
+            /* margin-left: 5px; */
+        }
+
+  
+   
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .main_form_heading {
+        margin: 0px 0;
+    }
+    .inner_header{
+        justify-content: center;
+    }
+    
+    .right_header ul{
+        width: 240px;
+        margin: auto;
+     }
+  }
+
+
+  @media screen and (max-width:540px) {
+    .right_header ul li{
+        font-size: 11px;
+    }
+    .main_heading h1{
+  
+        font-size: 13px;
+        
+       
+    }
+
+    .input_label{
+        font-size: 13px;
+       
+    }
+    .checkbox_label{
+        font-size:13px;
+        
+    }
+
+    .main_form_heading{
+        font-size: 15px;
+    }
+  }
